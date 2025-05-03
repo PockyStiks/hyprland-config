@@ -1,0 +1,10 @@
+[general]
+import = ["~/.config/alacritty/themes/themes/base_16_dark.toml"]
+
+[font]
+normal = {family = "JetBrainsMono Nerd Font", style = "regular"}
+size = 15.5
+
+[cursor]
+style = {shape = "Beam"}
+

@@ -1,0 +1,26 @@
+Error: /home/user/.config/lite-xl/plugins/minimap.lua:450: attempt to index a nil value (local 'color')
+
+stack traceback:
+	/home/user/.config/lite-xl/plugins/minimap.lua:450: in function 'plugins.minimap.draw'
+	/usr/share/lite-xl/core/view.lua:302: in function 'core.view.draw_scrollbar'
+	/usr/share/lite-xl/core/docview.lua:591: in upvalue 'old_draw'
+	/usr/share/lite-xl/plugins/linewrapping.lua:529: in function 'core.docview.draw'
+	/usr/share/lite-xl/core/node.lua:592: in function 'core.node.draw'
+	/usr/share/lite-xl/core/node.lua:32: in function 'core.node.propagate'
+	/usr/share/lite-xl/core/node.lua:597: in function 'core.node.draw'
+	/usr/share/lite-xl/core/node.lua:31: in function 'core.node.propagate'
+	/usr/share/lite-xl/core/node.lua:597: in function 'core.node.draw'
+	/usr/share/lite-xl/core/node.lua:32: in function 'core.node.propagate'
+	...	(skipping 2 levels)
+	/usr/share/lite-xl/core/rootview.lua:480: in upvalue 'root_view_draw'
+	/home/user/.config/lite-xl/libraries/widget/init.lua:1539: in upvalue 'draw'
+	/usr/share/lite-xl/plugins/autocomplete.lua:598: in upvalue 'root_view_draw'
+	/usr/share/lite-xl/plugins/contextmenu.lua:32: in upvalue 'root_view_draw'
+	/usr/share/lite-xl/plugins/treeview.lua:495: in function 'core.rootview.draw'
+	/usr/share/lite-xl/core/init.lua:1341: in function 'core.step'
+	/usr/share/lite-xl/core/init.lua:1401: in upvalue 'core_run'
+	/home/user/.config/lite-xl/plugins/settings.lua:1896: in function 'core.run'
+	(...tail calls...)
+	[string "local core..."]:14: in function <[string "local core..."]:6>
+	[C]: in function 'xpcall'
+	[string "local core..."]:6: in main chunk
