@@ -1,0 +1,9 @@
+%YAML 1.2
+---
+name: Plain Text (TOIT)
+scope: source.toit
+hidden: true
+file_extensions:
+  - toit
+contexts:
+  main: []

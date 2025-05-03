@@ -2,7 +2,7 @@
 
 ## Install dependecies 
 - `sudo pacman -S waybar hyprpaper rofi alacritty zsh nerd-fonts-jetbrains-mono` <br>
-- `yay -S lite-xl`
+- `yay -S sublime-text-4`
 
 ## Configure oh-my-zsh
 - `chsh -s /bin/zsh` <br>

@@ -107,5 +107,12 @@ fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure
 
-export PATH="$PATH:/home/user/.config/lite-xl/lpm-bin"
-alias xl='lite-xl &'
+# s opens sublime in the current directory, unless a file or directoy is specified
+s() {
+    if [ $# -eq 0 ]; then
+        subl .
+    else
+        subl "$@"
+    fi
+}
+

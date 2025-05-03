@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"BracketHighlighter",
+		"GitGutter",
+		"Material Monokai",
+		"Monokai++",
+		"Package Control",
+		"SublimeLinter",
+		"SublimeLinter-clang",
+		"SublimeLinter-pylint",
+		"Theme - Monokai Pro",
+	],
+}
