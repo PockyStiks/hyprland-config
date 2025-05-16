@@ -12,7 +12,9 @@
 - `git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"` <br>
 
 ### Add this to your .zshrc
-fpath+=($HOME/.zsh/pure) \ 
-autoload -U promptinit; promptinit \
+```
+fpath+=($HOME/.zsh/pure) <br> 
+autoload -U promptinit; promptinit <br>
 prompt pure
+```
 
