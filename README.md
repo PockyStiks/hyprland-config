@@ -13,8 +13,8 @@
 
 ### Add this to your .zshrc
 ```
-fpath+=($HOME/.zsh/pure) <br> 
-autoload -U promptinit; promptinit <br>
+fpath+=($HOME/.zsh/pure) 
+autoload -U promptinit; promptinit
 prompt pure
 ```
 
