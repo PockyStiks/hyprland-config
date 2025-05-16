@@ -15,8 +15,12 @@
         "tray",
         "cpu",
         "memory",
-        "pulseaudio",
-        "power-profiles-daemon"
+        "backlight",
+        "battery",
+        // "custom/bluetooth",
+        "network",
+        "pulseaudio"
+        // "power-profiles-daemon"
     ],
     "hyprland/workspaces": {
         "format": "<span size='small' font='normal Font Awesome 6 Free'>{icon}</span>",
@@ -94,12 +98,12 @@
         "spacing": 10
     },
     "cpu": {
-        "interval": 30,
+        "interval": 5,
         "format": " {load}%",
         "max-length": 10
     },
     "memory": {
-        "interval": 30,
+        "interval": 5,
         "format": " {used:0.1f} GB"
     },
     "power-profiles-daemon": {
@@ -112,6 +116,45 @@
         "balanced": "",
         "power-saver": ""
       }
+    },
+    "backlight": {
+      "device": "amdgpu_bl1",  
+      "format": "☀ {percent}%",
+      "interval": 2,
+      "on-scroll-up": "brightnessctl set +5% > /dev/null 2>&1",
+      "on-scroll-down": "brightnessctl set 5%- > /dev/null 2>&1"
+    },  
+    "battery": {
+        "bat": "BAT0",
+        "interval": 5,
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "tooltip": true,
+        "tooltip-format": "Power: {power}W\nTime remaining: {time}"
+    },
+    "custom/bluetooth": {
+        "exec": "~/.config/waybar/scripts/bluetooth_status.sh",
+        "interval": 5,
+        "format": "{}",
+        "tooltip": true,
+        "on-click": "blueman-manager"
+    },
+    "network": {
+        "interface": "wlan0",  // replace with your actual interface
+        "format-wifi": "{icon} {essid}",
+        "format-ethernet": "󰈁 {ifname}",
+        "format-disconnected": "󰖪 Disconnected",
+        "format-icons": [
+            "󰤯",  // 0–20%
+            "󰤟",  // 20–40%
+            "󰤢",  // 40–60%
+            "󰤥",  // 60–80%
+            "󰤨"   // 80–100%
+        ],
+        "tooltip": true,
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",
