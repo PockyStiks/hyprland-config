@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,3 +116,5 @@ s() {
     fi
 }
 
+alias f="fzf --preview 'bat --style=numbers --color=always {} | head -100' --bind 'enter:execute(nvim {})+abort'"
+alias shutdown="shutdown now"

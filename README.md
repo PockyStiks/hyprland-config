@@ -1,10 +1,18 @@
 # hyprland-config
 
 ## Install dependecies 
-- `sudo pacman -S waybar hyprpaper rofi alacritty zsh nerd-fonts-jetbrains-mono` <br>
+- `sudo pacman -S waybar hyprpaper rofi alacritty zsh ttf-jetbrains-mono` <br>
 - `yay -S sublime-text-4`
 
 ## Configure oh-my-zsh
 - `chsh -s /bin/zsh` <br>
 - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` <br>
-- `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+- `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting` <br>
+- `mkdir -p "$HOME/.zsh"` <br>
+- `git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"` <br>
+
+### Add this to your .zshrc
+fpath+=($HOME/.zsh/pure) \ 
+autoload -U promptinit; promptinit \
+prompt pure
+
