@@ -32,3 +32,4 @@ function y() {
 
 alias f="fd . ~ --type f --hidden --exclude .git | fzf --preview 'bat --style=numbers --color=always {} | head -100' --bind 'enter:execute(nvim {})+abort'"
 alias shutdown="shutdown now"
+alias h="helix"
