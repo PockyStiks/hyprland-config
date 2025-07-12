@@ -13,7 +13,7 @@ compinit
 eval "$(zoxide init zsh)"
 
 # s opens sublime in the current directory, unless a file or directoy is specified
-s() {
+subl() {
     if [ $# -eq 0 ]; then
         subl .
     else
