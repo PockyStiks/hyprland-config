@@ -1,7 +1,7 @@
 # hyprland-config
 
 ## Install dependecies 
-- `sudo pacman -S waybar hyprpaper rofi alacritty zsh ttf-jetbrains-mono zoxide fzf yazi grim slurp wl-clipboard neovim` <br>
+- `sudo pacman -S waybar hyprpaper rofi alacritty zsh ttf-jetbrains-mono-nerd zoxide fzf yazi grim slurp wl-clipboard neovim` <br>
 - `paru -S sublime-text-4 swappy`
 
 ## Configure oh-my-zsh
